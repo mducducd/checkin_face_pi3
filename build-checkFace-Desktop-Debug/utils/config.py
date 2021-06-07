@@ -7,7 +7,7 @@ dim = 128
 distance = 'euclidean'
 id_file = '/home/pi/build-checkFace-Desktop-Debug/hyper_id1.txt'
 ann_file = '/home/pi/build-checkFace-Desktop-Debug/all_hyper1.ann'
-threshold = 0.405
+threshold = 0.42
 
 ### Data files
 Data_dir = 'encode'
@@ -16,10 +16,11 @@ notification_file = '/home/pi/build-checkFace-Desktop-Debug/log_data/notificatio
 option_file = '/home/pi/build-checkFace-Desktop-Debug/log_data/option.txt'
 json_file = '/home/pi/build-checkFace-Desktop-Debug/log_data/checkin.json'
 color = '/home/pi/build-checkFace-Desktop-Debug/log_data/color.txt'
+is_capture = '/home/pi/build-checkFace-Desktop-Debug/log_data/capture.txt'
 
 ### Register
 name = 'new-guy'
-img_path = './images/image.jpg'
+img_path = '/home/pi/build-checkFace-Desktop-Debug/images/image.jpg'
 # timeout = time.time() + 60 * 5  # 5 minutes from now
 wait_time = 20
 
@@ -32,11 +33,12 @@ brightness = 50
 saturation = 60
 iso = 400
 # recognize mode (128p for pi0)
-h0 = 256
-w0 = 256
+h0 = 128
+w0 = 128
 # register mode
 h1 = 256
 w1 = 256
+face_area_limit = 0.0045 #128p 0.0023-256p
 
 ### Notifications English
 # startup = 'Warming up...'
