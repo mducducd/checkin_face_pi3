@@ -8,7 +8,7 @@ Tools:
 - Python
 - face_recognition
 - QT C++
-- Annoy/hnswlib (approximate neingbor search)
+- Annoy/hnswlib (approximate neighbor search)
 - pyfingerprint
 - Flask  (for API)
 - SQLite
